@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Plus conect</title>
+    <style>
+        *{
+          margin: 0%;
+          padding: 0%;
+          box-sizing: border-box;
+          background-image: linear-gradient(90deg,blue,cyan);
+        }
+        body{
+        display:flex;
+        }
+        .texto{
+          
+          width:120px;
+          display: flex;
+          flex-direction: row;
+        }
+        .texto .logo{
+          
+        }
+        .menuI{
+          width:50%;
+          color: yellow;
+          background-image: linear-gradient(90deg,cyan,yellow);
+        }
+        .menuII{
+          width:50%;
+          color: yellow;
+          background-image: linear-gradient(90deg,beige,cyan);
+        }
+       .Conecta4g{
+         width: 100%;
+         height: 360px;
+       }
+       .GL_tunnel{
+         margin-top:5%;
+         width: 100%;
+         height: 360px;
+       }
+       .Payload{
+         width:100%;
+         height: 360px;
+       }
+       .Proxys{
+         margin-top: 5%;
+         width:100%;
+         height: 360px;
+       }
+    </style>
+</head>
+<body>
+        <div class="texto">
+          <div class="logo">
+            <img src="{{ url_for('static', filename='logo.jpg') }}" width="75" height="75">
+          </div>
+        </div>
+        <div class="menuI">
+           <div class="Conecta4g">
+          <img src="{{ url_for('static', filename='arquivos.png') }}" width="250" height="250">
+            <h2>Criar arquivo conecta4G</h2>
+            <button><h1>Criar arquivo</h1></button>
+            </div>
+            <div class="GL_tunnel">
+              <img src="{{ url_for('static', filename='arquivos.png') }}" width="250" height="250">
+            <h2>Criar arquivo GL Tunnel</h2>
+            </div>
+        </div>
+        <div class="menuII">
+          <div class="Payload">
+            <h2>Criar Payload</h2>
+        </div>
+        <div class="Proxys">
+            <h2>Lista de proxys<br>mais recente</h2>
+        </div>
+        </div>
+</body>
+</html>

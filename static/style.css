@@ -1,0 +1,27 @@
+
+body{
+background-image: linear-gradient(90deg, cyan,beige);
+}
+
+.logo{
+  margin-top:50%;
+  margin-left:320px;
+}
+.leyer1{
+  width: 350px;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-left:310px;
+  margin-right: 420px;
+  border-radius: 8px;
+  
+}
+.leyer1 .menu{
+  display: block;
+  margin: 80px;
+}
+
+.leyer1 .menu .name{
+  display: flex;
+  height: 3px;
+}
